@@ -1,3 +1,11 @@
 body{
     background-color: white;
 }
+
+img{
+    position: absolute;
+    width: 353.49px;
+    height: 180px;
+    left: calc(50% - 353.49px/2 - 0.25px);
+    top: 2px;
+}
