@@ -1,0 +1,18 @@
+body{
+    background-color: #033D7F;
+}
+
+li{
+    list-style-type:  none;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+    display: inline;
+
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/*Louka: nav*/
