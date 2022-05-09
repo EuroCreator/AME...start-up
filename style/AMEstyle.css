@@ -1,3 +1,42 @@
 body{
     background-color: white;
 }
+
+div{
+    float: right;
+}
+
+span{
+    padding: 5px;
+}
+
+a{
+    text-align: end;
+    text-decoration: none;
+    color: back;
+}
+
+.centrer {
+    text-align: center ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style {
+    border :0;
+    line-height: 2.8;
+    color: white;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.style2{
+    border :0;
+    line-height: 2.8;  
+    color: rgb(0, 132, 255);
+    background-color: blue;
+    border-radius: 10px;
+    border-radius: 3px skyblue;
+}
