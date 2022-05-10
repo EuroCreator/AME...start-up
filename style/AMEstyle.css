@@ -1,19 +1,23 @@
+
+
 body{
-    background-color: white;
+    background-color: #ffffff;
+    width: 100%;
+    margin:0px;
 }
+
+
 
 div{
     float: right;
 }
 
+.fond{
+
+    float: center;
+}
 span{
     padding: 5px;
-}
-
-a{
-    text-align: end;
-    text-decoration: none;
-    color: back;
 }
 
 .centrer {
@@ -26,9 +30,10 @@ a{
 .style {
     border :0;
     line-height: 2.8;
-    color: white;
+    color: #58A2ED;
     text-align: center;
-    background-color: skyblue;
+    background-color: greenyellow;
+    border-color: #58A2ED;
     border-radius: 10px;
 }
 
@@ -36,7 +41,63 @@ a{
     border :0;
     line-height: 2.8;  
     color: rgb(0, 132, 255);
-    background-color: blue;
+    background-color: green;
     border-radius: 10px;
-    border-radius: 3px skyblue;
+    border-radius: 3px #033D7F;
+}
+
+
+ul{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0%;
+}
+
+
+
+li{
+    list-style-type:  none;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+    display: inline;
+    padding:0% 7%;
+    font-weight: 700;
+
+    /*Paramètre du texte*/
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+@media (max-width: 1600px) { 
+    li{
+        font-size: 20px;
+        padding:0% 5%;
+    }
+}
+
+@media (max-width: 900px) { 
+    li{
+        font-size: 15px;
+        padding:0% 2%;
+    }
+}
+
+
+.caca{
+position: fixed;
+width: 100%;
+height: 25%;
+top: 0%;
+left: 0%;
+background-color: #033D7F ;
+border-radius: 0px 0px 30px 30px;
+background-clip: padding-box;
 }
