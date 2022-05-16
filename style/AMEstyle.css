@@ -225,6 +225,11 @@ section #Paypal {
     section span {
         font-size: 22px;
     }
+
+    #video {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -260,6 +265,11 @@ section #Paypal {
     section span {
         font-size: 18px;
     }
+
+    #video {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -293,6 +303,11 @@ section #Paypal {
     section p,
     section span {
         font-size: 16px;
+    }
+
+    #video {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
