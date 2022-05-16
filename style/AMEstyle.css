@@ -9,7 +9,7 @@ header {
     background-color: #033D7F;
 }
 
-header #Logo-Accueil{
+header #Logo-accueil {
     width: 353.49px;
     height: 180px;
     top: 2px;
@@ -18,28 +18,11 @@ header #Logo-Accueil{
     margin: 0 auto;
 }
 
-header #logo-secondaires{
-    position: absolute;
-width: 90px;
-height: 90px;
-left: calc(50% - 90px/2);
-top: 8px;
-}
-
-header #Logo{
-    position: absolute;
-width: 176.4px;
-height: 90px;
-left: -24px;
-top: 8px;
-}
-
 header h1 {
     position: absolute;
-    width: 1440px;
-    height: 50px;
-    left: calc(50% - 1440px/2);
-    top: 87px;
+    left: 0%;
+    right: 0%;
+    top: 10%;
     padding: 0;
 
     font-family: 'BioRhyme', serif;
@@ -181,6 +164,9 @@ section a {
     text-align: center;
 }
 
+section #Paypal {
+    width: 80%;
+}
 
 /*Code de Mathéo (vidéo responsive) crée en début d'année pour mon portfolio*/
 .video-responsive {
@@ -222,10 +208,13 @@ section a {
         /*hauteur*/
         height: 25px;
         margin-top: 20px;
+        top: 10.5%;
     }
 
     header h1 {
         font-size: 44px;
+        margin: 2% 0;
+        top: 10.5%;
     }
 
     section h2 {
@@ -235,10 +224,6 @@ section a {
     section p,
     section span {
         font-size: 22px;
-    }
-    header #logo{
-        width: 176.4px;
-        height: 90px;
     }
 }
 
@@ -258,23 +243,22 @@ section a {
         /*hauteur*/
         height: 20px;
         margin-top: 5px;
+        top: 12%;
     }
 
     header h1 {
-        font-size: 32px;
+        font-size: 26px;
+        margin: 1% 0;
+        top: 14%;
     }
 
     section h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     section p,
     section span {
         font-size: 18px;
-    }
-    header #logo{
-        width: 132.3px;
-        height: 67,5px;
     }
 }
 
@@ -297,7 +281,9 @@ section a {
     }
 
     header h1 {
-        font-size: 22px;
+        font-size: 18px;
+        margin: 0;
+        top: 14.5%;
     }
 
     section h2 {
@@ -307,10 +293,6 @@ section a {
     section p,
     section span {
         font-size: 16px;
-    }
-    header #logo{
-        width: 99px;
-        height: 50,5px;
     }
 }
 
