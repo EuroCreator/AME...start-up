@@ -1,4 +1,4 @@
-==body {
+body {
     background-color: #ffffff;
     width: 100%;
     margin: 0px;
@@ -9,7 +9,7 @@ header {
     background-color: #033D7F;
 }
 
-header img {
+header #Logo-Accueil{
     width: 353.49px;
     height: 180px;
     top: 2px;
@@ -18,17 +18,55 @@ header img {
     margin: 0 auto;
 }
 
+header #logo-secondaires{
+    position: absolute;
+width: 90px;
+height: 90px;
+left: calc(50% - 90px/2);
+top: 8px;
+}
+
+header #Logo{
+    position: absolute;
+width: 176.4px;
+height: 90px;
+left: -24px;
+top: 8px;
+}
+
+header h1 {
+    position: absolute;
+    width: 1440px;
+    height: 50px;
+    left: calc(50% - 1440px/2);
+    top: 87px;
+    padding: 0;
+
+    font-family: 'BioRhyme', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+
 nav {
     width: 100%;
     height: 100%;
-    padding: 10px 0px;
     background-color: #033D7F;
+    padding-top: 10px;
+    padding-bottom: 2px;
     border-radius: 0px 0px 35px 35px / 0px 0px 35px 35px;
+
+    /*Alignement au centre des éléments enfants */
     text-align: center;
 
 }
 
-/*Tester l'alignement au centre*/
+/*Tester l'alignement au centre (temporaire) */
 #vertical-bar {
     border: 2px solid green;
     height: 100%;
@@ -48,36 +86,50 @@ nav {
 }
 
 nav ul {
-    padding: 10px 0px;
-    margin: 0 auto;
-    text-align: center;
+    /* Après des heures de recherches, grâce à Figma et certains forums-discord, 
+    j'ai réussi à aligner correctement au centre les éléments de navigatio responsive */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0;
+
+    /*Espacement des goutière*/
+    gap: 5%;
+
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 170px;
 }
 
 nav li {
     list-style-type: none;
+
+    /*Espacement automatique des éléments de navigation*/
     margin: auto;
-    display: inline;
+
+    width: 25%;
+    height: 50px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 
 }
-
-/*Test unique par élément de navigation
-#Navigation1 {
-    left: 25%;
-}
-
-#Navigation2 {
-    left: 50%;
-}
-
-#Navigation3 {
-    left: 75%;
-} */
 
 nav a {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 0 8%;
+
+    /*Au cas où*/
+    margin: auto;
+    padding: auto;
+    width: 100%;
 
     /*Paramètre de police*/
     font-family: 'Sora',
@@ -89,61 +141,180 @@ nav a {
     text-align: center;
 }
 
-@media (max-width: 1840px) {
-    nav a {
-        font-size: 20px;
-        padding: 0% 5%;
-    }
-}
-
-@media (max-width: 940px) {
-    nav a {
-        font-size: 14px;
-        padding: 0 2%;
-    }
-}
-
-@media (max-width: 580px) {
-    nav a {
-        font-size: 10px;
-        padding: 0 1%;
-    }
-}
-
 section {
-    margin-top: 4%;
+    margin-top: 2%;
+    margin-bottom: 30px;
+    margin: 2%;
     text-align: center;
+}
+
+section p {
     font-family: 'Sora',
         sans-serif;
-    font-size: 30px;
-
+    font-size: 26px;
+    margin: 0;
 }
-h2 {
-    text-align: center;
+
+section span {
     font-family: 'Sora',
         sans-serif;
 
 }
-h1 {
-    text-align: center;
+
+section h2 {
     font-family: 'BioRhyme', serif;
+    font-size: 46px;
+    margin-bottom: 0;
 
 }
-.video-responsive { 
-    overflow:hidden; 
-    padding-bottom:56.25%; 
-    position:relative; 
-    height:0;
+
+section a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+
+    /*Paramètre de police*/
+    font-family: 'Sora',
+        sans-serif;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
-.video-responsive iframe{ 
+
+
+/*Code de Mathéo (vidéo responsive) crée en début d'année pour mon portfolio*/
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
     position: absolute;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
 }
+
 #video {
-    margin-left:30%;
-    margin-right:30%;
+    margin-left: 24%;
+    margin-right: 24%;
 }
+
+
+/*Option responsive */
+@media (max-width: 1600px) {
+    nav a {
+        font-size: 22px;
+    }
+
+    nav li {
+        width: 32%;
+    }
+
+    nav ul {
+        /*Espacement des goutière*/
+        gap: 2%;
+
+        /*hauteur*/
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 44px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    section p,
+    section span {
+        font-size: 22px;
+    }
+    header #logo{
+        width: 176.4px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    nav li {
+        width: 32%;
+    }
+
+    nav ul {
+        /*Espacement des goutière*/
+        gap: 0;
+
+        /*hauteur*/
+        height: 20px;
+        margin-top: 5px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    section p,
+    section span {
+        font-size: 18px;
+    }
+    header #logo{
+        width: 132.3px;
+        height: 67,5px;
+    }
+}
+
+@media (max-width: 640px) {
+    nav a {
+        font-size: 8px;
+    }
+
+    nav li {
+        width: 32%;
+    }
+
+    nav ul {
+        /*Espacement des goutière*/
+        gap: 0;
+
+        /*hauteur*/
+        height: 14px;
+        margin-top: 0px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p,
+    section span {
+        font-size: 16px;
+    }
+    header #logo{
+        width: 99px;
+        height: 50,5px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+/*L'import de police BioRhyme ne marche pas ;(
+    @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+*/
