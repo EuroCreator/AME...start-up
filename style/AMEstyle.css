@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    margin:0;
+    margin: 0;
 }
 
 header {
@@ -19,8 +19,8 @@ header #Logo-accueil {
     margin: 0 auto;
 }
 
-header #logo-secondaires{
-    width: 6%;
+header #logo-secondaires {
+    width: 6.5%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -28,16 +28,18 @@ header #logo-secondaires{
     top: 8px;
 }
 
-header #Logo-AME{
+header #Logo-AME {
     position: absolute;
-    width: 8%;
+    width: 6%;
     height: auto;
     left: -1%;
-    top: 2px /*à voir*/;
+    top: 2px
+        /*à voir*/
+    ;
 }
 
 header h1 {
-    padding-bottom: 1%;
+    padding-bottom: 20px;
     margin: auto;
 
     font-family: 'BioRhyme', serif;
@@ -87,9 +89,10 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top:0;
+    margin-top: 0;
     margin: auto;
     padding-bottom: 1%;
+    padding-left: 0;
 
     /*Espacement des goutière
     gap: 5%;*/
@@ -129,7 +132,7 @@ nav a {
         sans-serif;
     font-size: 2em;
     font-weight: 700;
-    line-height: 38px;
+    line-height: auto;
     letter-spacing: 0.02em;
     text-align: center;
 }
@@ -206,7 +209,11 @@ section #Paypal {
     header #Logo-accueil {
         width: 36%;
     }
-    
+
+    header #logo-secondaires {
+        width: 12%;
+    }
+
     nav a {
         font-size: 22px;
     }
@@ -216,11 +223,12 @@ section #Paypal {
     }
 
     nav ul {
-        padding-bottom: 0.7%;
+        padding-bottom: 12px;
     }
 
     header h1 {
         font-size: 44px;
+        padding-bottom: 12px;
     }
 
     section h2 {
@@ -242,7 +250,15 @@ section #Paypal {
     header #Logo-accueil {
         width: 48%;
     }
-    
+
+    header #Logo-AME {
+        display: none;
+    }
+
+    header #logo-secondaires {
+        width: 18%;
+    }
+
     nav a {
         font-size: 14px;
     }
@@ -252,11 +268,12 @@ section #Paypal {
     }
 
     nav ul {
-        padding-bottom: 0.4%;
+        padding-bottom: 8px;
     }
 
     header h1 {
         font-size: 26px;
+        padding-bottom: 4px;
     }
 
     section h2 {
@@ -275,6 +292,18 @@ section #Paypal {
 }
 
 @media (max-width: 640px) {
+    header #Logo-accueil {
+        width: 64%;
+    }
+
+    header #Logo-AME {
+        display: none;
+    }
+
+    header #logo-secondaires {
+        width: 24%;
+    }
+
     nav a {
         font-size: 8px;
     }
@@ -284,15 +313,12 @@ section #Paypal {
     }
 
     nav ul {
-        padding-bottom: 0.1%;
+        padding-bottom: 4px;
     }
 
     header h1 {
         font-size: 18px;
-    }
-
-    header #Logo-accueil {
-        width: 64%;
+        padding-bottom: 0;
     }
 
     section h2 {
@@ -309,7 +335,7 @@ section #Paypal {
         margin-right: 5%;
     }
 
-    
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
