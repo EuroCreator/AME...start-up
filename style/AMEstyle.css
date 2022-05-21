@@ -33,9 +33,7 @@ header #Logo-AME {
     width: 6%;
     height: auto;
     left: -1%;
-    top: 2px
-        /*à voir*/
-    ;
+    top: 2px;
 }
 
 header h1 {
@@ -50,6 +48,62 @@ header h1 {
     letter-spacing: -0.02em;
 
     color: #FFFFFF;
+}
+
+#Inscription {
+    position: absolute;
+    width: 140px;
+    height: 34px;
+    right: 20px;
+    top: 20px;
+    display: inline;
+
+    border: 2.5px solid #58A2ED;
+    filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
+    border-radius: 9px;
+    background-color: #58A2ED;
+}
+
+#Connexion {
+    position: absolute;
+    width: 140px;
+    height: 34px;
+    right: 180px;
+    top: 20px;
+    display: inline;
+
+    border: 2.5px solid #58A2ED;
+    filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
+    border-radius: 9px;
+}
+
+header a {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    /*Aligner le texte du bouton au centre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /*Contenant du lien doit prendre le maximum d'espace*/
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+header #Inscription a {
+    color: white;
+}
+
+header #Connexion a {
+    color: #58A2ED;
 }
 
 nav {
@@ -259,6 +313,11 @@ section #Paypal {
         width: 18%;
     }
 
+    /*Alignement à gauche du bouton Se connecter*/
+    #Connexion {
+        left: 20px;
+    }
+
     nav a {
         font-size: 14px;
     }
@@ -302,6 +361,25 @@ section #Paypal {
 
     header #logo-secondaires {
         width: 24%;
+    }
+
+    /*Update de la taille des boutons*/
+    #Connexion,
+    #Inscription {
+        width: 84px;
+        height: 20.4px;
+        top: 20px;
+        display: inline;
+
+        border: 2px solid #58A2ED;
+        filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
+        border-radius: 9px;
+    }
+
+    /*Update de la taille de la police du texte (bouton)*/
+    header a {
+        font-weight: 450;
+        font-size: 11px;
     }
 
     nav a {
