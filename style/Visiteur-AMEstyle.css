@@ -1,3 +1,6 @@
+/*À part quelques balises comme "p" ou "h2", Mathéo a codé cette fiche de style*/
+
+/*Paramètre de base*/
 body {
     background-color: #ffffff;
     margin: 0;
@@ -14,6 +17,7 @@ header {
     border-radius: 0px 0px 35px 35px / 0px 0px 35px 35px;
 }
 
+/*Partie supérieur de présentation : header*/
 header #Logo-accueil {
     width: 25%;
     height: auto;
@@ -54,6 +58,7 @@ header h1 {
     color: #FFFFFF;
 }
 
+/*Header => Les deux boutons*/
 #Inscription,
 #Connexion {
     position: absolute;
@@ -114,6 +119,7 @@ header #Connexion a {
     color: #58A2ED;
 }
 
+/*Barre de navigation aligné au centre, même les éléments et responsive : nav*/
 nav {
     width: 100%;
     height: 100%;
@@ -185,6 +191,7 @@ nav a:hover {
     color: white;
 }
 
+/*Première section sur la présentation de la page "index.html"*/
 #Accueil {
     margin-top: 0.5%;
 }
@@ -271,6 +278,11 @@ nav a:hover {
     padding-left: 5%;
 }
 
+#premiereSection {
+    margin-top: 12%;
+}
+
+/*Les sections en générales*/
 section {
     margin-top: 2%;
     margin-bottom: 30px;
@@ -278,9 +290,6 @@ section {
     text-align: center;
 }
 
-#premiereSection {
-    margin-top: 12%;
-}
 
 section p,
 section li {
@@ -400,7 +409,7 @@ section #Paypal {
     display: inline-block;
 }
 
-/*Bouton "Retour de la page Erreur technique"*/
+/*Bouton en fin de page*/
 section #bouton {
     margin-top: 16px;
     display: inline-block;
@@ -442,6 +451,7 @@ section #bouton a {
     height: 100%;
 }
 
+/*Le choix de réponses du QCM de la page "inscription.html"*/
 section ul {
     margin: auto;
 }
@@ -450,7 +460,7 @@ section li {
     list-style: none;
 }
 
-/*Credit*/
+/*Credit : footer*/
 footer {
     background-color: #033D7F;
     margin-top: 10px;
@@ -466,7 +476,7 @@ footer {
     letter-spacing: 0.02em;
 }
 
-/*Crédit en bas de page absolument pour les courtes pages*/
+/*Footer en bas de page absolument pour les courtes pages*/
 #court {
     position: absolute;
     bottom: 0;
@@ -524,7 +534,7 @@ input {
         font-size: 32px;
     }
 
-    /*Responsive (un peu laid) de l'accueil*/
+    /*Responsive (un peu laide) de l'accueil*/
     #Accueil #Pretitre {
         padding-top: 120px;
     }
@@ -557,6 +567,7 @@ input {
         font-size: 16px;
     }
 
+    /*Fixation du footer quand la page est trop petite*/
     #courtResponsive {
         position: absolute;
         bottom: 0;
@@ -579,7 +590,7 @@ input {
         width: 18%;
     }
 
-    /*Alignement à gauche du bouton Se connecter*/
+    /*Alignement à gauche du bouton "Se connecter"*/
     #Connexion {
         left: 20px;
     }
@@ -601,7 +612,7 @@ input {
         padding-bottom: 4px;
     }
 
-    /*Responsive (un peu laid) de l'accueil*/
+    /*Responsive (un peu laide) de l'accueil*/
     #Accueil #Pretitre {
         padding-top: 40px;
     }
@@ -708,7 +719,7 @@ input {
         padding-bottom: 0;
     }
 
-    /*Responsive (un peu laid) de l'accueil*/
+    /*Responsive (un peu laide) de l'accueil*/
     #Accueil #dessinAccueil {
         width: 100%;
         margin-top: 2%;

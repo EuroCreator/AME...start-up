@@ -1,11 +1,14 @@
 <!Doctype html>
 <html>
+<!--Page réalisée par Mathéo-->
 
 <head>
     <meta charset='utf-8' />
-    <!-- Le contenue prend toute la taille de l'écran -->
-    <meta name="viewport" content="width=device-width" />
     <title>Connexion à AME</title>
+    <!-- Le contenue prend toute la taille de l'écran (sécurité responsive de Mathéo)-->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style/Visiteur-AMEstyle.css" />
+    <!--Louka - Importation de la police BioRhyme-->
     <link rel="stylesheet" type="text/css" href="style/Visiteur-AMEstyle.css" />
     <!--Importation de la police BioRhyme-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +20,14 @@
 </head>
 
 <body>
+    <!-- Partie supérieur de présentation spéciale inscription/connexion/erreur : header -->
     <header id="transitionClient">
         <img alt="Logo AME" src="ressources/logo.png" id="Logo-AME" />
         <img alt="Logo support support-technique" src="ressources/Connexion.png" id="logo-secondaires" />
         <h1>Connexion</h1>
     </header>
 
+    <!-- Formulaire pour avoir l'identifiant et le mot de passe (au final, on ne l'exploite pas)-->
     <section>
         <form action="none" method="post" name="connexion" autocomplete="username">
             <label>Identifiant : </label>
@@ -33,9 +38,12 @@
         </form>
     </section>
 
+    <!-- Bouton erreur technique-->
     <section>
         <div id="bouton"><a href="erreur.html">Se connecter</a></div>
     </section>
+
+    <!-- Mathéo - crédit -->
     <footer id="court">
         <span>Mise à jour en mai 2022, &copy;AME Start-Up</span>
     </footer>
