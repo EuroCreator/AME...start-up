@@ -10,6 +10,10 @@ header {
     padding: auto;
 }
 
+#transitionClient {
+    border-radius: 0px 0px 35px 35px / 0px 0px 35px 35px;
+}
+
 header #Logo-accueil {
     width: 25%;
     height: auto;
@@ -50,31 +54,34 @@ header h1 {
     color: #FFFFFF;
 }
 
-#Inscription {
+#Inscription,
+#Connexion {
     position: absolute;
+    display: inline;
     width: 140px;
     height: 34px;
-    right: 20px;
     top: 20px;
-    display: inline;
 
     border: 2.5px solid #58A2ED;
     filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
     border-radius: 9px;
+    display: inline;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#Inscription:hover,
+#Connexion:hover {
+    box-shadow: none;
+}
+
+#Inscription {
+    right: 20px;
     background-color: #58A2ED;
 }
 
 #Connexion {
-    position: absolute;
-    width: 140px;
-    height: 34px;
     right: 180px;
-    top: 20px;
-    display: inline;
-
-    border: 2.5px solid #58A2ED;
-    filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
-    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 header a {
@@ -309,12 +316,15 @@ section #Paypal {
     width: 80%;
 }
 
-/*Code de Mathéo (vidéo responsive) crée en début d'année pour mon portfolio*/
+/*Code de Mathéo (vidéo responsive) crée en début d'année pour son portfolio*/
 .video-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+
+    /*Ajout supplémentaire pour être moins agressif*/
+    border-radius: 14px 14px 0 0;
 }
 
 .video-responsive iframe {
@@ -349,6 +359,11 @@ section #Paypal {
     background-color: #58A2ED;
     border-radius: 6px;
     border: none;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#partenaires select:hover {
+    box-shadow: none;
 }
 
 #partenaires option,
@@ -366,6 +381,47 @@ section #Paypal {
 
 #partenaires:hover #AmineWork {
     display: inline-block;
+}
+
+/*Bouton "Retour de la page Erreur texhnique"*/
+section #Erreur {
+    margin-top: 16px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+
+    border: 2.5px solid #58A2ED;
+    filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
+    border-radius: 9px;
+    background-color: #58A2ED;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#Erreur:hover {
+    box-shadow: none;
+}
+
+section #Erreur a {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: white;
+
+    /*Aligner le texte du bouton au centre */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /*Contenant du lien doit prendre le maximum d'espace*/
+    padding: 14px 20px;
+    left: 0;
+    right: 0;
+    height: 100%;
 }
 
 /*Option responsive */
@@ -546,7 +602,8 @@ section #Paypal {
     }
 
     /*Update de la taille de la police du texte (bouton)*/
-    header a {
+    header a,
+    section #Erreur a {
         font-size: 11px;
     }
 
