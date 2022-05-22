@@ -80,7 +80,7 @@ header h1 {
 header a {
     font-family: 'Sora', sans-serif;
     font-style: normal;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.02em;
@@ -208,6 +208,7 @@ section p {
 section span {
     font-family: 'Sora',
         sans-serif;
+    font-weight: 400;
 
 }
 
@@ -226,6 +227,7 @@ section a {
     /*Paramètre de police*/
     font-family: 'Sora',
         sans-serif;
+    font-weight: 400;
     line-height: 38px;
     letter-spacing: 0.02em;
     text-align: center;
@@ -260,6 +262,7 @@ section #Paypal {
 #partenaires label {
     font-family: 'Sora',
         sans-serif;
+    font-weight: 400;
     font-size: 26px;
     margin: 0;
 }
@@ -277,9 +280,20 @@ section #Paypal {
 
 #partenaires option,
 #partenaires optgroup {
-    background-color: #A7CEF6;
+    background-color: #90C1F3;
 }
 
+#AmineWork {
+    font-family: 'Sora',
+        sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    display: none;
+}
+
+#partenaires:hover #AmineWork {
+    display: inline-block;
+}
 
 /*Option responsive */
 @media (max-width: 1600px) {
@@ -425,7 +439,6 @@ section #Paypal {
 
     /*Update de la taille de la police du texte (bouton)*/
     header a {
-        font-weight: 450;
         font-size: 11px;
     }
 
