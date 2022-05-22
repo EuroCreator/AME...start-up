@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Favicon dessiné par Louka -->
+    <link rel="icon" type="image/png" href="ressources/favicon.png" />
 </head>
 
 <body>
@@ -22,9 +24,20 @@
     </header>
 
     <section>
+        <form action="none" method="post" name="connexion" autocomplete="username">
+            <label>Identifiant : </label>
+            <input form="connexion" name="identifiant" required maxlength="14" placeholder="Roger" type="text" />
+            <br />
+            <label>Mot de passe : </label>
+            <input form="connexion" name="mot-de-passe" required maxlength="22" type="password" />
+        </form>
     </section>
-    <footer>
 
+    <section>
+        <div id="bouton"><a href="erreur.html">Se connecter</a></div>
+    </section>
+    <footer id="court">
+        <span>Mise à jour en mai 2022, &copy;AME Start-Up</span>
     </footer>
 </body>
 

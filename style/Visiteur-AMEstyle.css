@@ -69,6 +69,7 @@ header h1 {
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
+/*Effet pour savoir si c'est cliquable*/
 #Inscription:hover,
 #Connexion:hover {
     box-shadow: none;
@@ -160,7 +161,7 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #EBEBEB;
     text-decoration: none;
     display: inline-block;
 
@@ -177,6 +178,11 @@ nav a {
     line-height: auto;
     letter-spacing: 0.02em;
     text-align: center;
+}
+
+/*Effet pour savoir si c'est cliquable*/
+nav a:hover {
+    color: white;
 }
 
 #Accueil {
@@ -273,7 +279,7 @@ section {
 }
 
 #premiereSection {
-    margin-top: 7%;
+    margin-top: 12%;
 }
 
 section p,
@@ -341,6 +347,16 @@ section #Paypal {
     margin-right: 24%;
 }
 
+/*Carte Google Maps France responsive*/
+#carte {
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 /*Mise en forme du formulaire où on propose tous nos partenaires par départements*/
 #partenaires label {
     font-family: 'Sora',
@@ -362,6 +378,7 @@ section #Paypal {
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
+/*Effet pour savoir si c'est cliquable*/
 #partenaires select:hover {
     box-shadow: none;
 }
@@ -383,8 +400,8 @@ section #Paypal {
     display: inline-block;
 }
 
-/*Bouton "Retour de la page Erreur texhnique"*/
-section #Erreur {
+/*Bouton "Retour de la page Erreur technique"*/
+section #bouton {
     margin-top: 16px;
     display: inline-block;
     width: auto;
@@ -397,11 +414,12 @@ section #Erreur {
     box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
-#Erreur:hover {
+/*Effet pour savoir si c'est cliquable*/
+#bouton:hover {
     box-shadow: none;
 }
 
-section #Erreur a {
+section #bouton a {
     font-family: 'Sora', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -430,6 +448,49 @@ section ul {
 
 section li {
     list-style: none;
+}
+
+/*Credit*/
+footer {
+    background-color: #033D7F;
+    margin-top: 10px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: white;
+
+    /*Paramètre de police*/
+    font-family: 'Sora',
+        sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/*Crédit en bas de page absolument pour les courtes pages*/
+#court {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Formulaire de connexion*/
+label,
+input {
+    margin: 12px;
+    /*Paramètre de police*/
+    font-family: 'Sora',
+        sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    font-weight: 400;
 }
 
 /*Option responsive */
@@ -479,7 +540,10 @@ section li {
     section p,
     #QRcode-PAYPAL,
     #partenaires label,
-    section li {
+    section li,
+    label,
+    input,
+    footer {
         font-size: 22px;
     }
 
@@ -491,6 +555,13 @@ section li {
 
     #partenaires select {
         font-size: 16px;
+    }
+
+    #courtResponsive {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
 }
@@ -563,7 +634,10 @@ section li {
     section p,
     #QRcode-PAYPAL,
     #partenaires label,
-    section li {
+    section li,
+    label,
+    input,
+    footer {
         font-size: 18px;
     }
 
@@ -613,7 +687,7 @@ section li {
 
     /*Update de la taille de la police du texte (bouton)*/
     header a,
-    section #Erreur a {
+    section #bouton a {
         font-size: 11px;
     }
 
@@ -683,7 +757,10 @@ section li {
     section p,
     #QRcode-PAYPAL,
     #partenaires label,
-    section li {
+    section li,
+    label,
+    input,
+    footer {
         font-size: 16px;
     }
 
