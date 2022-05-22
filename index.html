@@ -3,10 +3,10 @@
 
 <head>
     <meta charset='utf-8' />
-    <!-- Le contenue prend toute la taille de l'écran -->
+    <!--Mathéo- Le contenue prend toute la taille de l'écran -->
     <meta name="viewport" content="width=device-width" />
     <title>AME, présentation</title>
-    <link rel="stylesheet" type="text/css" href="style/AMEstyle.css" />
+    <link rel="stylesheet" type="text/css" href="style/Visiteur-AMEstyle.css" />
     <!--Importation de la police BioRhyme-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +14,13 @@
 </head>
 
 <body>
+<!--Valentin (Bouttons) et Louka (Logo)-->
     <header>
-        <img alt="Logo AME" src="ressources/logo.png" id="Logo-Accueil" />
+        <img alt="Logo AME" src="ressources/logo.png" id="Logo-accueil" />
+        <div id="Connexion"><a href="connexion.html">Se connecter</a></div>
+        <div id="Inscription"><a href="inscription.html">S'inscrire</a></div>
     </header>
+<!--Louka- barre navigation-->
     <nav>
         <ul>
             <li id="Navigation1"><a href='actu.html'>Actualités et partenaires</a></li>
@@ -24,7 +28,24 @@
             <li id="Navigation3"><a href='spt.html'>Support-technique</a></li>
         </ul>
     </nav>
-    <section>
+<!--Mathéo- haut de page-->
+    <div id="Accueil">
+        <img src="ressources/presentationDessin.png" alt="dessin stylé de Louka pour présenter le projet"
+            id="dessinAccueil" />
+        <div id="Pretitre">
+            <img id="mainDirectionnelle" alt="icon" src="ressources/Main.png" />
+            <div id="Intro">
+                <span>La santé mental</span>
+                <div id="accueil-cercleLeftTop"></div>
+                <div id="accueil-cercleRightTop"></div>
+                <div id="accueil-cercleLeftBottom"></div>
+                <div id="accueil-cercleRightBottom"></div>
+            </div>
+        </div>
+        <div id="Accroche"> Pour les résidents<br />d’EPHAD et<br />leurs suivis</div>
+    </div>
+<!--Louka- contenu accueil-->
+    <section id="premiereSection">
         <h2>Qu’est-ce qu’AME ?</h2>
         <p>Les Aînés suivis Moralement en EHPAD (AME) est une start-up, ayant pour objectif d’aider les <br />
             résidents en EHPAD, au niveau de la santé mentale, afin d’assurer leur bien-être <br />
@@ -49,7 +70,7 @@
             sociologue/psychologue)<br />
             .Alors si vous voulez nous rejoindre, contactez-nous (Support technique).</p>
     </section>
-
+<!--Louka- Ajout vidéo-->
     <section id="video">
         <div class="video-responsive">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/syTX3eCb8fE"
