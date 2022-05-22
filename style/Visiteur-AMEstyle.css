@@ -117,25 +117,6 @@ nav {
 
 }
 
-/*Tester l'alignement au centre (temporaire) */
-#vertical-bar {
-    border: 2px solid green;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 49.75%;
-    right: 49.75%;
-}
-
-#vertical-bar-limit {
-    border: 2px solid green;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 42%;
-    right: 42%;
-}
-
 nav ul {
     /* Après des heures de recherches, grâce à Figma et certains forums-discord, 
     j'ai réussi à aligner correctement au centre les éléments de navigatio responsive */
@@ -196,6 +177,10 @@ section {
     margin-bottom: 30px;
     margin: 2%;
     text-align: center;
+}
+
+section #dessinAccueil {
+    float: right;
 }
 
 section p {
