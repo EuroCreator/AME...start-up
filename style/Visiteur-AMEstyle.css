@@ -172,6 +172,92 @@ nav a {
     text-align: center;
 }
 
+#Accueil {
+    margin-top: 0.5%;
+}
+
+#Accueil #dessinAccueil {
+    width: 55%;
+    right: 0;
+    top: 20%;
+    float: right;
+}
+
+#Accueil #Pretitre {
+    width: 45%;
+    padding-top: 240px;
+
+    /*Aligner le texte du bouton au centre */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+
+#Accueil #mainDirectionnelle {
+    margin-left: 14%;
+}
+
+#Accueil #Intro {
+    /*Aligner le texte du bouton au centre */
+    padding: 0.6%;
+
+    /*Contour stylé*/
+    border: 2.5px solid #033D7F;
+    filter: drop-shadow(2px 3px 6px rgba(51, 51, 51, 0.25));
+    border-radius: 1px;
+}
+
+#Accueil #Intro span {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #033D7F;
+    display: inline-block;
+}
+
+#Accueil #Intro div {
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: #033D7F;
+    position: absolute;
+}
+
+#Accueil #accueil-cercleLeftTop {
+    left: -2.5%;
+    top: -14%;
+}
+
+#Accueil #accueil-cercleRightTop {
+    right: -2.5%;
+    top: -14%;
+}
+
+#Accueil #accueil-cercleLeftBottom {
+    left: -2.5%;
+    bottom: -14%;
+}
+
+#Accueil #accueil-cercleRightBottom {
+    right: -2.5%;
+    bottom: -14%;
+}
+
+#Accueil #Accroche {
+    /*Paramètre de police*/
+    font-family: 'Sora',
+        sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    font-size: 3.5em;
+    text-align: left;
+    padding-left: 5%;
+}
+
 section {
     margin-top: 2%;
     margin-bottom: 30px;
@@ -179,8 +265,8 @@ section {
     text-align: center;
 }
 
-section #dessinAccueil {
-    float: right;
+#premiereSection {
+    margin-top: 7%;
 }
 
 section p {
@@ -313,6 +399,19 @@ section #Paypal {
         font-size: 32px;
     }
 
+    /*Responsive (un peu laid) de l'accueil*/
+    #Accueil #Pretitre {
+        padding-top: 120px;
+    }
+
+    #Accueil #Accroche {
+        font-size: 2em;
+    }
+
+    #premiereSection {
+        margin-top: 15%;
+    }
+
     section p,
     #QRcode-PAYPAL,
     #partenaires label {
@@ -324,10 +423,6 @@ section #Paypal {
         margin-right: 16%;
     }
 
-    #video {
-        margin-left: 24%;
-        margin-right: 24%;
-    }
 
     #partenaires select {
         font-size: 16px;
@@ -368,6 +463,32 @@ section #Paypal {
     header h1 {
         font-size: 26px;
         padding-bottom: 4px;
+    }
+
+    /*Responsive (un peu laid) de l'accueil*/
+    #Accueil #Pretitre {
+        padding-top: 40px;
+    }
+
+    #Accueil #Accroche {
+        font-size: 1.5em;
+    }
+
+    #premiereSection {
+        margin-top: 16%;
+    }
+
+    #Accueil #Intro span {
+        font-size: 16px;
+    }
+
+    #Accueil #mainDirectionnelle {
+        width: 30px;
+    }
+
+    #Accueil #Intro {
+        /*Aligner le texte du bouton au centre */
+        padding: 1.5%;
     }
 
     section h2 {
@@ -444,6 +565,48 @@ section #Paypal {
     header h1 {
         font-size: 18px;
         padding-bottom: 0;
+    }
+
+    /*Responsive (un peu laid) de l'accueil*/
+    #Accueil #dessinAccueil {
+        width: 100%;
+        margin-top: 2%;
+        float: none;
+    }
+
+    #Accueil #Pretitre {
+        padding-top: 40px;
+        width: 100%;
+        padding-top: 4%;
+    }
+
+    #Accueil #mainDirectionnelle {
+        margin-left: 24%;
+    }
+
+    #Accueil #Accroche {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    #Accueil #Intro span {
+        font-size: 16px;
+    }
+
+    #Accueil #mainDirectionnelle {
+        width: 30px;
+    }
+
+    #Accueil #Intro {
+        /*Aligner le texte du bouton au centre */
+        padding: 1.2%;
+    }
+
+    #premiereSection {
+        margin-top: 0;
     }
 
     section h2 {
