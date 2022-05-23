@@ -29,16 +29,19 @@
 
     <!-- Formulaire pour avoir l'identifiant et le mot de passe (au final, on ne l'exploite pas)-->
     <section>
-        <form action="none" method="post" name="connexion" autocomplete="username">
+        <form action="none" method="post" name="connexion">
             <label>Identifiant : </label>
-            <input form="connexion" name="identifiant" required maxlength="14" placeholder="Roger" type="text" />
+            <input form="connexion" name="identifiant" required maxlength="14" placeholder="Roger" type="text"
+                autocomplete="username" />
             <br />
             <label>Mot de passe : </label>
-            <input form="connexion" name="mot-de-passe" required maxlength="22" type="password" />
+            <input form="connexion" name="mot-de-passe" required maxlength="22" type="password"
+                autocomplete="current-password" />
         </form>
     </section>
 
-    <!-- Bouton erreur technique-->
+    <!-- Bouton vers l'erreur technique (en réalité, en cas de vrai récolte de donnée, 
+        il faut utiliser un input de type "submit" mais pour cette fois, sans PHP, c'est juste un lien)-->
     <section>
         <div id="bouton"><a href="erreur.html">Se connecter</a></div>
     </section>
